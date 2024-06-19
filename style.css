@@ -1,0 +1,972 @@
+ *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "consolas";
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+    z-index: 10;
+    justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+}
+nav.bgColor {
+    background-color: hsl(237, 72%, 80%);
+}
+nav .toggle{
+    position: absolute;
+    
+}
+nav .logo{
+padding: 10px;
+}
+
+nav .links{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding-top: 10px;
+    transition: all 5s ease-in-out;
+   }
+nav .cancel{
+    display: none;
+}
+
+ nav .links a {
+     color: hsl(233, 26%, 24%);
+     text-decoration: none;
+ }
+nav .invite{
+    display: flex;
+    height: 25px;
+    margin-top: 8px;
+}
+nav .request{
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+nav .options{
+    display:none;
+    padding-top: 10px;
+    height: 5px;
+}
+nav .options .line{
+    width: 25px;
+    height: 2px;
+    background-color: hsl(233, 26%, 24%);
+    margin: 4px;
+    display: flex;
+}
+.container .content{
+padding-top: 5rem;
+}
+.container .main-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .main-heading h3{
+   color: hsl(233, 26%, 24%);
+   font-size: xx-large;
+   font-weight: 900;
+}
+.container .main-description{
+    display: flex;
+    color: hsl(233, 8%, 62%);
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 10px;
+}
+.container .invite{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.container .request{
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 25px;
+}
+.container .illustration{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.container .illustration img{
+    width: 500px;
+    height: 600px;
+}
+.container1 .reasons{
+    display: flex;
+    padding-top: 3rem;
+    background-color: hsl(0, 0%, 98%);
+    flex-direction: column;
+    align-items: center;
+
+}
+.container1 .heading1{
+    color:  hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.container1 .description1{
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    
+}
+.container1 .description1{
+    color: hsl(233, 26%, 24%);
+}
+.container1 .offers{
+    background-color: hsl(0, 0%, 98%);
+}
+.container1 .Online-Banking{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 2rem;
+}
+.container1 .Banking{
+    margin-left: 1rem;
+}
+.container1 .Banking img{
+   margin-left: 100px;
+   border-radius: 50%;
+   width: 70px;
+}
+.container1 .paragraph1 p{
+    color: hsl(233, 26%, 24%)
+}
+.container1 .Banking h2{
+    color: limegreen;
+    margin-left: 70px;
+}
+.container1 .Budgeting img {
+    margin-left: 100px;
+    border-radius: 50%;
+    width: 70px;
+}
+.container1 .paragraph2 p {
+    color: hsl(233, 26%, 24%)
+}
+
+.container1 .Budgeting h2 {
+    color: limegreen;
+    margin-left: 70px;
+}
+.container1 .Onboarding img {
+    width: 70px;
+    margin-left: 100px;
+    border-radius: 50%
+}
+.container1 .paragraph3 p {
+    color: hsl(233, 26%, 24%)
+}
+.container1 .Onboarding h2 {
+    color: limegreen;
+    margin-left: 70px;
+}
+.container1 .API {
+    margin-right: 1rem;
+}
+.container1 .API img {
+    width: 70px;
+    margin-left: 100px;
+    border-radius: 50%
+}
+.container1 .paragraph4 p {
+    color: hsl(233, 26%, 24%)
+}
+.container1 .API h2 {
+    color: limegreen;
+    margin-left: 95px;
+}
+.container2 h1{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    color: hsl(233, 26%, 24%);
+    padding-top: 3rem;
+}
+.container2 .articles{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 7rem;
+}
+.container2 .currency{
+    margin-left: 1rem;
+}
+.container2 .currency img{
+    height: 180px;
+    width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.container2 .currency p{
+    color: hsl(233, 8%, 62%);
+    padding-top: 10px;
+}
+.container2 .details-currency h2{
+color: hsl(233, 26%, 24%);
+}
+
+.container2 .restaurant {
+    margin-right: 1rem;
+}
+
+.container2 .restaurant img {
+    height: 180px;
+    width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container2 .restaurant p {
+    color: hsl(233, 8%, 62%);
+    padding-top: 10px;
+}
+
+.container2 .details-restaurant h2 {
+    color: hsl(233, 26%, 24%);
+}
+.container2 .mobility {
+    margin-left: 1rem;
+}
+
+.container2 .mobility img {
+    height: 180px;
+    width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container2 .mobility p {
+    color: hsl(233, 8%, 62%);
+    padding-top: 10px;
+}
+
+.container2 .details-mobility h2 {
+    color: hsl(233, 26%, 24%);
+}
+.container2 .beta {
+    margin-right: 1rem;
+}
+
+.container2 .beta img {
+    height: 180px;
+    width: 320px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container2 .beta p {
+    color: hsl(233, 8%, 62%);
+    padding-top: 10px;
+}
+
+.container2 .details-beta h2 {
+    color: hsl(233, 26%, 24%);
+}
+.footer{
+    background-color: hsl(233, 26%, 24%);
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    height: 25%;
+    justify-content: space-around;
+    margin-top: 5rem;
+}.footer .logo{
+    margin-top: 4rem;
+}
+.footer .social-icons{
+    margin-top: 2rem;
+    gap: 20px;
+}
+.footer .social-icons i{
+    color: white;
+}
+
+.footer .links{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
+}
+.footer .links a{
+    color: white;
+    text-decoration: none;
+}
+.footer .invite{
+    width:fit-content;
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+}
+.footer .request{
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 25px;
+}
+.footer .copyright{
+    display: flex;
+}
+.footer .copyright i{
+    padding-bottom: 2rem;
+    color: white;
+    font-size: small;
+}
+.footer .copyright h5 {
+    color: white;
+}
+@media screen and (max-width: 480px){ 
+    .nav{
+        display: flex;
+    }
+    nav .logo{
+       display: flex;
+    }
+    nav .logo img{
+        height: 20px;
+        width: 40px;
+    }
+    nav .links{
+        position: fixed;
+        z-index: 9;
+        flex-direction: column;
+        background-color: hsl(237, 72%, 80%);
+        width:100% ;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        display: none;
+        transition: all 5s ease-in-out;
+
+    }
+    nav .cancel{
+        z-index:9 ;
+        color: #fff;
+        padding-top: 10px;
+        padding-left: 10rem;
+    }
+    nav .links a{
+        display: block;
+        color: #fff;
+        margin-top: 5rem;
+    }
+    nav .invite {
+       display: flex;
+       height: 25px;
+       margin-top: 8px;
+    }
+    
+    nav .request{
+        display: none;
+    }
+    nav .options{
+        display: block;
+        z-index: 9;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+    }
+    .container .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container .main-description p{
+        padding: 15px;
+    }
+    .container1 .paragraph1 p{
+        padding: 10px;
+    }
+    .container1 .description1 p{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .container .illustration img {
+        width: 300px;
+        height: 400px;
+    }
+    .container1 .Online-Banking{
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .container1 .Banking{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .Budgeting {
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .Budgeting{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .Budgeting img{
+        display: flex;
+        justify-content: center;
+    }
+    .container1 .paragraph2 p{
+        padding: 15px;
+    }
+    .container1 .Onboarding{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .Onboarding img {
+        display: flex;
+        justify-content: center;
+    }
+    .container1 .paragraph3 p {
+        padding: 15px;
+    }
+    .container1 .API {
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .API img {
+        display: flex;
+        justify-content: center;
+    }
+    .container1 .paragraph4 p {
+        padding: 15px;
+    }
+    .container2 .articles{
+        display: flex;
+        flex-direction : column;
+    }
+    .container2 .currency img{
+        width: 320px;
+        padding-left: 20px;
+    }
+    .container2 .details-currency {
+            padding: 15px;
+    }
+    .container2 .restaurant{
+        display: flex;
+        flex-direction: column;
+    }
+    .container2 .restaurant img{
+      width: 300px;
+      padding-left: 40px;
+    }
+    .container2 .restaurant p{
+       padding-left: 10px;
+    }
+    .container2 .details-restaurant{
+        padding: 15px;
+    }
+   .container2 .mobility {
+        display: flex;
+        flex-direction: column;
+    }
+    .container2 .mobility img {
+        width: 320px;
+        padding-left: 20px;
+    }
+    .container2 .details-mobility {
+        padding: 15px;
+    }
+    .container2 .beta {
+        display: flex;
+        flex-direction: column;
+    }
+    .container2 .beta img {
+        width: 300px;
+        padding-left: 40px;
+    }
+    .container2 .beta p{
+        padding-left: 10px;
+    }
+    .container2 .details-beta {
+        padding: 15px;
+    }
+    .container2 .footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .footer .copyright h5 {
+         color: white;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 600px){
+    .nav {
+            display: flex;
+            position: fixed;
+            overflow: hidden;
+        nav .logo {
+            display: flex;
+        }
+        nav .logo img {
+            height: 20px;
+            width: 40px;
+        }
+        nav .links {
+            position: fixed;
+            z-index: 9;
+            flex-direction: column;
+            background-color: hsl(192, 70%, 51%);
+            width: 100%;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+            align-items: center;
+            display: none;
+            transition: all .5s ease-in-out;
+    
+        }
+        nav .cancel {
+            z-index: 9;
+            color: #fff;
+            padding-top: 10px;
+            padding-left: 20rem;
+        }
+        nav .links a {
+            display: block;
+            color: #fff;
+            margin-top: 5rem;
+        }
+        nav .invite {
+            display: flex;
+            height: 25px;
+            margin-top: 8px;
+        }
+        nav .request {
+            display: none;
+        }
+        nav .options {
+            display: block;
+            z-index: 9;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+        }
+        .container .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .container .main-description p {
+            padding: 15px;
+        }
+        .container1 .paragraph1 p {
+            padding: 10px;
+        }
+        .container1 .description1 p {
+            padding: 10px;
+        }
+        .container .illustration img {
+            width: 300px;
+            height: 400px;
+        }
+        .container1 .Online-Banking {
+            display: flex;
+            flex-direction: column;
+            padding-top: 3rem;
+        }
+        .container1 .Banking {
+            display: flex;
+            flex-direction: column;
+        }
+        .container1 .Banking img {
+            display: flex;
+            margin-left: 20rem;
+        }
+        .container1 .Banking h2 {
+            margin-left: 17rem;
+            display: flex;
+        }
+        .container1 .Budgeting {
+            display: flex;
+            flex-direction: column;
+        }
+        .container1 .Budgeting {
+            display: flex;
+            flex-direction: column;
+        }
+        .container1 .Budgeting img {
+            display: flex;
+            margin-left: 20rem;
+        }
+        .container1 .Budgeting h2{
+            margin-left:17rem;
+            display: flex;
+        }
+        .container1 .paragraph2 p {
+            padding: 15px;
+        }
+        .container1 .Onboarding {
+            display: flex;
+            flex-direction: column;
+        }
+        .container1 .Onboarding img {
+            display: flex;
+            margin-left: 20rem;
+        }
+        .container1 .Onboarding h2 {
+            margin-left: 17rem;
+            display: flex;
+        }
+        .container1 .paragraph3 p {
+            padding: 15px;
+        }
+        .container1 .API {
+            display: flex;
+            flex-direction: column;
+        }
+        .container1 .API img {
+            display: flex;
+            margin-left: 20rem;
+        }
+        .container1 .API h2 {
+            margin-left: 20rem;
+            display: flex;
+        }
+        .container1 .paragraph4 p {
+            padding: 15px;
+        }
+        .container2 .articles {
+            display: flex;
+            flex-direction: column;
+        }
+        .container2 .currency img {
+            width: 300px;
+            margin-left: 8rem;
+        }
+        .container2 .currency p {
+            padding-left: 28px;
+        }
+        .container2 .details-currency {
+            padding: 15px;
+        }
+        .container2 .details-currency h2 {
+            padding-left: 15px;
+        }
+        .container2 .restaurant {
+            display: flex;
+            flex-direction: column;
+        }
+        .container2 .restaurant img {
+            width: 300px;
+            margin-left: 8rem;
+        }
+        .container2 .restaurant p {
+            padding-left: 28px;
+        }
+        .container2 .details-restaurant {
+            padding: 15px;
+        }
+        .container2 .details-restaurant h2 {
+            padding-left: 15px;
+        }
+        .container2 .mobility {
+            display: flex;
+            flex-direction: column;
+        }
+        .container2 .mobility img {
+            width: 300px;
+            margin-left: 8rem;
+        }
+        .container2 .mobility p {
+            padding-left: 28px;
+        }
+        .container2 .details-mobility {
+            padding: 15px;
+        }
+        .container2 .details-mobility h2 {
+            padding-left: 15px;
+        }
+        .container2 .beta {
+            display: flex;
+            flex-direction: column;
+        }
+        .container2 .beta img {
+            width: 300px;
+            margin-left: 8rem;
+        }
+        .container2 .beta p {
+            padding-left: 28px;
+        }
+        .container2 .details-beta {
+            padding: 15px;
+        }
+        .container2 .details-beta h2 {
+            padding-left: 15px;
+        }
+        .container2 .footer {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            align-items: center;
+        }
+        .footer .copyright h5 {
+            color: white;
+        }
+    }
+}
+
+        @media screen and (min-width: 600PX) and (max-width: 800px) {
+            .nav {
+                display: flex;
+                position: fixeds;
+            }
+            nav .logo {
+                display: flex;
+            }
+            nav .logo img {
+                height: 20px;
+                width: 40px;
+            }
+            nav .links {
+                position: fixed;
+                z-index: 9;
+                flex-direction: column;
+                background-color: hsl(192, 70%, 51%);
+                width: 100%;
+                height: 100%;
+                right: 0;
+                bottom: 0;
+                align-items: center;
+                display: none;
+                transition: all .5s ease-in-out;
+            }
+            nav .cancel {
+                z-index: 9;
+                color: #fff;
+                padding-top: 10px;
+                padding-left: 20rem;
+            }
+            nav .links a {
+                display: block;
+                color: #fff;
+                margin-top: 5rem;
+            }
+            nav .invite {
+                display: flex;
+                height: 25px;
+                margin-top: 8px;
+            }
+            nav .request {
+                display: none;
+            }
+            nav .options {
+                display: block;
+                z-index: 9;
+            }
+            .container {
+                width: 100%;
+                display: flex;
+            }
+            .container .content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .container .main-description p {
+                padding: 15px;
+            }
+            .container1 .paragraph1 p {
+                padding: 10px;
+            }
+    
+            .container1 .description1 p {
+                padding: 10px;
+            }
+    
+            .container .illustration img {
+                width: 300px;
+                height: 400px;
+            }
+            .container1 .Online-Banking {
+                display: flex;
+                flex-direction: column;
+                padding-top: 3rem;
+            }
+            .container1 .Banking {
+                display: flex;
+                flex-direction: column;
+            }
+            .container1 .Banking img {
+                display: flex;
+                margin-left: 25rem;
+            }
+            .container1 .Banking h2 {
+                margin-left: 22rem;
+                display: flex;
+            }
+            .container1 .Budgeting {
+                display: flex;
+                flex-direction: column;
+            }
+            .container1 .Budgeting {
+                display: flex;
+                flex-direction: column;
+            }
+            .container1 .Budgeting img {
+                display: flex;
+                margin-left: 25rem;
+            }
+            .container1 .Budgeting h2 {
+                margin-left: 22rem;
+                display: flex;
+            }
+            .container1 .paragraph2 p {
+                padding: 15px;
+            }
+            .container1 .Onboarding {
+                display: flex;
+                flex-direction: column;
+            }
+            .container1 .Onboarding img {
+                display: flex;
+                margin-left: 25rem;
+            }
+            .container1 .Onboarding h2 {
+                margin-left: 22rem;
+                display: flex;
+            }
+            .container1 .paragraph3 p {
+                padding: 15px;
+            }
+            .container1 .API {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .container1 .API img {
+                display: flex;
+                margin-left: 25rem;
+            }
+    
+            .container1 .API h2 {
+                margin-left: 24rem;
+                display: flex;
+            }
+    
+            .container1 .paragraph4 p {
+                padding: 15px;
+            }
+    
+            .container2 .articles {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .container2 .currency img {
+                width: 300px;
+                margin-left: 15rem;
+            }
+    
+            .container2 .currency p {
+                padding-left: 28px;
+            }
+    
+            .container2 .details-currency {
+                padding: 15px;
+            }
+    
+            .container2 .details-currency h2 {
+                padding-left: 15px;
+            }
+    
+            .container2 .restaurant {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .container2 .restaurant img {
+                width: 300px;
+                margin-left: 15rem;
+            }
+    
+            .container2 .restaurant p {
+                padding-left: 28px;
+            }
+    
+            .container2 .details-restaurant {
+                padding: 15px;
+            }
+    
+            .container2 .details-restaurant h2 {
+                padding-left: 15px;
+            }
+    
+            .container2 .mobility {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .container2 .mobility img {
+                width: 300px;
+                margin-left: 15rem;
+            }
+    
+            .container2 .mobility p {
+                padding-left: 28px;
+            }
+    
+            .container2 .details-mobility {
+                padding: 15px;
+            }
+    
+            .container2 .details-mobility h2 {
+                padding-left: 15px;
+            }
+    
+            .container2 .beta {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .container2 .beta img {
+                width: 300px;
+                margin-left: 15rem;
+            }
+    
+            .container2 .beta p {
+                padding-left: 30px;
+            }
+    
+            .container2 .details-beta {
+                padding: 15px;
+            }
+    
+            .container2 .details-beta h2 {
+                padding-left: 15px;
+            }
+    
+            .container2 .footer {
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                align-items: center;
+            }
+            .footer .copyright h5 {
+                color: white;
+            }
+        }
+    
+
