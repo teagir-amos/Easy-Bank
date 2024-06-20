@@ -30,8 +30,7 @@ nav .links{
     list-style: none;
     gap: 1.5rem;
     padding-top: 10px;
-    transition: all 5s ease-in-out;
-   }
+}
 nav .cancel{
     display: none;
 }
@@ -354,8 +353,9 @@ color: hsl(233, 26%, 24%);
         bottom: 0;
         align-items: center;
         display: none;
-        transition: all 5s ease-in-out;
-
+        transition-property: all;
+        transition-duration: 2sec;
+        transition-timing-fuction: ease-in-out;
     }
     nav .cancel{
         z-index:9 ;
