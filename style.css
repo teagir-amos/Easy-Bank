@@ -354,7 +354,7 @@ color: hsl(233, 26%, 24%);
         align-items: center;
         display: none;
         transition-property: all;
-        transition-duration: 10sec;
+        transition-duration: 20sec;
         transition-timing-fuction: ease-in-out;
     }
     nav .cancel{
